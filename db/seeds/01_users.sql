@@ -55,3 +55,4 @@
     name, email, password, isAdmin)
     VALUES (
     'Mabelle Hughes', 'jordansears@outlook.com', 'password', false);
+
