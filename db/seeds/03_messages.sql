@@ -1,3 +1,4 @@
+
 INSERT INTO messages (content, sender_id, recipient_id, sent_at)
 VALUES
     ('Sill available?', 1, 2, '2021-09-05 18:19:03');
@@ -40,3 +41,4 @@ VALUES
     INSERT INTO messages (content, sender_id, recipient_id, sent_at)
 VALUES
     ('Hi Where is it located?', 9, 10, '2021-11-29 17:35:25');
+

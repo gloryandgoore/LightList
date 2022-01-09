@@ -1,4 +1,6 @@
-INSERT INTO favourites(user_id, item_id)
+
+
+INSERT INTO favourites(user_id, product_id)
 VALUES
 (1,2),
 (1,3),

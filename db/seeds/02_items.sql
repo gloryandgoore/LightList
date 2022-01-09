@@ -1,3 +1,4 @@
+
 INSERT INTO items (id, make, model, seller_id, is_sold, price, description, year, is_featured, date_posted, image_url)
 VALUES
     ('Ford ', 'Windstar'    	1, 1, 23862, 'Good condition, 11268 km', 2017, 0, '2021-07-23', 'temp');
@@ -46,3 +47,4 @@ VALUES
     
     
     
+
