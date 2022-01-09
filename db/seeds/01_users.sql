@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 -- Users table seeds here (Example)
+=======
+>>>>>>> tables
  INSERT INTO users (
     name, email, password, isAdmin)
     VALUES (
@@ -55,4 +58,7 @@
     name, email, password, isAdmin)
     VALUES (
     'Mabelle Hughes', 'jordansears@outlook.com', 'password', false);
+<<<<<<< HEAD
 
+=======
+>>>>>>> tables
