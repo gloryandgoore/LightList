@@ -7,7 +7,6 @@ CREATE TABLE items (
   price INTEGER NOT NULL,
   description VARCHAR(255) NOT NULL,
   is_featured BOOLEAN NOT NULL DEFAULT FALSE,
-  category_id INTEGER REFERENCES categories(id) NOT NULL,
   date_posted TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
   image_url VARCHAR(255) NOT NULL
 );
