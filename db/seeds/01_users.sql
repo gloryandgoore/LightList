@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+-- Users table seeds here (Example)
+>>>>>>> 7a93f488155213415ef89ec89ab09cebc453acc8
  INSERT INTO users (
     name, email, password, isAdmin)
     VALUES (
@@ -54,3 +58,7 @@
     name, email, password, isAdmin)
     VALUES (
     'Mabelle Hughes', 'jordansears@outlook.com', 'password', false);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7a93f488155213415ef89ec89ab09cebc453acc8
