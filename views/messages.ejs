@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<title>Autozone, Favourite Vehicles</title>
+		<link href="../public/img/favicon.png" type="image/x-icon" rel="shortcut icon">
+		<link href="../styles/layout.css" rel="stylesheet">
+		<link href="../public/plugins/iview/css/iview.css" rel="stylesheet">
+		<link href="../public/plugins/iview/css/skin/style.css" rel="stylesheet">
+
+<!-- JQuery -->
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+	
+	</head>
+
+
+	<body>
+
+
+
+		<div id="this-top" class="layout-theme animated-css" data-header="sticky" data-header-top="200">
+
+	
+
+			<div id="wrapper">
+
+        <div id="wrapper">
+          <%- include('partials/header'); %>
+				<div class="block-title">
+					<div class="block-title__inner section-bg section-bg_second">
+						<div class="bg-inner">
+							<h1  style="color: #eee;" class=""> <b> Messages </b></h1>
+						</div><!-- end bg-inner -->
+					</div><!-- end block-title__inner -->
+				</div><!-- end block-title -->
+
+        <section style="background-color: #eee;" >
+          <div class="container py-5 ">
+        
+            <div class="row ">
+        
+              <div class="col-md-6 col-lg-6 col-xl-6 mb-4 mb-md-0 ">
+        
+                <h1 class="font-weight-bold mb-3 text-center text-lg-start">Chats</h1>
+        
+                <div class="card overflow" >
+                  <div class="card-body">
+        
+                    <ul class="list-unstyled mb-0">
+                      <li class="p-2 border-bottom" style="background-color: #eee;">
+                        <a href="#!" class="d-flex justify-content-between">
+                          <div class="d-flex flex-row">
+                            <img src="../public/media/cards/4.jpg" alt="avatar"
+                              class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
+                            <div class="pt-1">
+                              <h3 class="fw-bold mb-0">Corvette</h3>
+                              <h5 class=" text-muted">Hello, Are you there?</h5>
+                            </div>
+                          </div>
+                          <div class="pt-1">
+                            <p class=" text-muted mb-1">Just now</p>
+                            <!-- <span class="badge bg-danger float-end">1</span> -->
+                          </div>
+                        </a>
+                      </li>
+                      <li class="p-2 border-bottom">
+                        <a href="#!" class="d-flex justify-content-between">
+                          <div class="d-flex flex-row">
+                            <img src="../public/media/cards/5.jpg" alt="avatar"
+                              class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
+                            <div class="pt-1">
+                              <h3 class="fw-bold mb-0">Jeep</h3>
+                              <h5 class=" text-muted">Whats the final price ?</h5>
+                            </div>
+                          </div>
+                          <div class="pt-1">
+                            <p class=" text-muted mb-1">5 mins ago</p>
+                          </div>
+                        </a>
+                      </li>
+                      
+                      
+                    </ul>
+        
+                  </div>
+                </div>
+        
+              </div>
+        
+              <div class="col-md-6 col-lg-6 col-xl-6">
+                  <h1 class="font-weight-bold mb-3 text-center text-lg-start">Messages</h1>
+      
+                <ul class="list-unstyled overflow" >
+                  <li class="d-flex justify-content-between mb-4">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp" alt="avatar"
+                      class="rounded-circle d-flex align-self-start me-3 shadow-1-strong" width="60">
+                    <div class="card">
+                      <div class="card-header d-flex justify-content-between p-3">
+                        <h4 class="fw-bold mb-0">Brad Pitt</h4>
+                        <h4 class="text-muted small mb-0"><i class="far fa-clock"></i> 12 mins ago</h4>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="mb-0">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua.
+                        </h5>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between mb-4">
+                    <div class="card w-100">
+                      <div class="card-header d-flex justify-content-between p-3">
+                        <h4 class="fw-bold mb-0">Lara Croft</h4>
+                        <p class="text-muted small mb-0"><i class="far fa-clock"></i> 13 mins ago</p>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="mb-0">
+                          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                          laudantium.
+                        </h5>
+                      </div>
+                    </div>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-5.webp" alt="avatar"
+                      class="rounded-circle d-flex align-self-start ms-3 shadow-1-strong" width="60">
+                  </li>
+                  <li class="d-flex justify-content-between mb-4">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp" alt="avatar"
+                      class="rounded-circle d-flex align-self-start me-3 shadow-1-strong" width="60">
+                    <div class="card">
+                      <div class="card-header d-flex justify-content-between p-3">
+                        <h4 class="fw-bold mb-0">Brad Pitt</h4>
+                        <h4 class="text-muted small mb-0"><i class="far fa-clock"></i> 12 mins ago</h4>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="mb-0">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua.
+                        </h5>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="bg-white mb-3">
+                    <div class="form-outline">
+                      <textarea class="form-control" id="textAreaExample2" rows="4"></textarea>
+                      <label class="form-label" for="textAreaExample2">Message</label>
+                    </div>
+                  </li>
+                  <button type="button" class="btn ">Send</button>
+                </ul>
+        
+              </div>
+        
+            </div>
+        
+          </div>
+        </section>
+
+        <footer class="footer wow bounceInUp" data-wow-duration="2s">
+      
+          <div class="copyright">Copyrights 2022  <a class="" href="javascript:void(0);">LightList</a> : : All
+            rights reserved</div>
+  
+</footer>
+
+			</div><!-- end #wrapper -->
+		</div><!-- end layout-theme -->
+
+		<span class="scroll-top"> <i class="fa fa-angle-up"> </i></span>
+
+
+
+		
+
+
+
+	</body>
+</html>
