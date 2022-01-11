@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Home Page</title>
+  <%- include('partials/head'); %>
 
   <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
   <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
@@ -13,10 +13,17 @@
   <script type="text/javascript" src="/scripts/app.js"></script>
 </head>
 
+<header>
+  <%- include('partials/header'); %>
+</header>
+
 <body>
-  <% for (let item of items) { %>
-    <p><%= item.name %></p>
-    <% } %>
+  <div class="jumbotron">
+    <% for (let item of items) { %>
+      <h1><%= item.name %></h1>
+      <% } %>
+
+    </div>
 </body>
 
 </html>
