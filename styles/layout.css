@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------
-[Master Stylesheet]
+[Master cssheet]
 
 Project:	Autozone
 Version:	1.0
@@ -8,7 +8,7 @@ Primary use:	Autozone
 -------------------------------------------------------------------*/
 
 /* FONTS*/
-@import url(../public/styles/css.css);
+@import url(../public/css/css.css);
 @import url('../public/fonts/font-awesome/css/font-awesome.min.css');
 @import url('../public/fonts/flaticon/flaticon.css');
 @import url('../public/fonts/simple/simple.css');
@@ -32,11 +32,11 @@ Primary use:	Autozone
 
 
 /* MAIN CSS */
-@import url('../public/styles/theme.css');
-@import url('../public/styles/sections.css');
-@import url('../public/styles/blog.css');
-@import url('../public/styles/sidebar.css');
-@import url('../public/styles/responsive.css');
-@import url('../public/styles/color.css');
+@import url('../public/css/theme.css');
+@import url('../public/css/sections.css');
+@import url('../public/css/blog.css');
+@import url('../public/css/sidebar.css');
+@import url('../public/css/responsive.css');
+@import url('../public/css/color.css');
 /*@import url('debugging.css');*/
 
