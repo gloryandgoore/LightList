@@ -1,6 +1,42 @@
-// See: https://sass-lang.com/
+/*------------------------------------------------------------------
+[Master Stylesheet]
 
-body,
-html {
-  margin: 0;
-}
+Project:	Autozone
+Version:	1.0
+Assigned to:	WebNik
+Primary use:	Autozone
+-------------------------------------------------------------------*/
+
+/* FONTS*/
+@import url(../public/styles/css.css);
+@import url('../public/fonts/font-awesome/css/font-awesome.min.css');
+@import url('../public/fonts/flaticon/flaticon.css');
+@import url('../public/fonts/simple/simple.css');
+@import url('../public/fonts/autoicon/css/fontello.css');
+
+/* PLUGIN CSS */
+@import url('../public/plugins/sliderpro/css/slider-pro.css');
+@import url('../public/plugins/bootstrap/css/bootstrap.css');
+@import url('../public/plugins/isotope/isotope.css');
+@import url('../public/plugins/owl-carousel/owl.carousel.css');
+@import url('../public/plugins/owl-carousel/owl.transitions.css');
+@import url('../public/plugins/owl-carousel/owl.theme.css');
+@import url('../public/plugins/validation/validation-2.2.min.css');
+@import url('../public/plugins/prettyphoto/css/prettyPhoto.css');
+@import url('../public/plugins/nouislider/jquery.nouislider.css');
+@import url('../public/plugins/yamm/yamm.css');
+@import url('../public/plugins/jelect/main.css');
+@import url('../public/plugins/flexslider/flexslider.css'); 
+@import url('../public/plugins/animate/animate.css');
+
+
+
+/* MAIN CSS */
+@import url('../public/styles/theme.css');
+@import url('../public/styles/sections.css');
+@import url('../public/styles/blog.css');
+@import url('../public/styles/sidebar.css');
+@import url('../public/styles/responsive.css');
+@import url('../public/styles/color.css');
+/*@import url('debugging.css');*/
+
