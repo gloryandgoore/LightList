@@ -6,7 +6,7 @@ const PORT       = process.env.PORT || 8080;
 const ENV        = process.env.ENV || "development";
 const express    = require("express");
 const bodyParser = require("body-parser");
-const sass       = require("node-sass-middleware");
+const sassMiddleware   = require("./lib/sass-middleware");
 const app        = express();
 const morgan     = require('morgan');
 const cookieSession = require('cookie-session')
@@ -32,8 +32,9 @@ app.use(
   "/styles", sassMiddleware({
     source: __dirname + "/styles",
     destination: __dirname + "/public/styles",
-    debug: true,
-    outputStyle: 'expanded'
+    isSass: false,
+    // debug: true,
+    // outputStyle: 'expanded'
   }));
 
 app.use(express.static("public"));
