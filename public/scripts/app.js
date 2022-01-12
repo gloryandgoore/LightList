@@ -9,3 +9,14 @@ $(() => {
     }
   });;
 });
+
+$('.fa-heart').click((evt) => {
+    evt.stopPropagation();
+    evt.preventDefault();
+    console.log('click')
+    $.post("/favourites", {itemId: $(evt.target).data("item")})
+      .done(() => {
+        console.log('done');
+      })
+  })
+});
