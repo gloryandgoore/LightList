@@ -9,6 +9,5 @@ CREATE TABLE items (
   is_featured BOOLEAN NOT NULL DEFAULT FALSE,
   category_id INTEGER REFERENCES categories(id) NOT NULL,
   date_posted TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-  image_url VARCHAR(255) NOT NULL,
-  is_available BOOLEAN DEFAULT TRUE
+  image_url VARCHAR(255) NOT NULL
 );
