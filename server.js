@@ -9,6 +9,7 @@ const bodyParser = require("body-parser");
 const sass       = require("node-sass-middleware");
 const app        = express();
 const morgan     = require('morgan');
+const cookieSession = require('cookie-session')
 
 // PG database client/connection setup
 const { Pool } = require("pg");
@@ -21,17 +22,19 @@ db.connect();
 //         The :status token will be colored red for server error codes, yellow for client error codes, cyan for redirection codes, and uncolored for all other codes.
 app.use(morgan("dev"));
 
+app.use(cookieSession({
+  name: "session",
+  keys: ["user_id"]
+}))
 app.set("view engine", "ejs");
-app.use(express.urlencoded({ extended: true }));
-
-// app.use(
-//   "/styles",
-//   sassMiddleware({
-//     source: __dirname + "/styles",
-//     destination: __dirname + "/public/styles",
-//     isSass: false, // false => scss, true => sass
-//   })
-// );
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(
+  "/styles", sassMiddleware({
+    source: __dirname + "/styles",
+    destination: __dirname + "/public/styles",
+    debug: true,
+    outputStyle: 'expanded'
+  }));
 
 app.use(express.static("public"));
 
@@ -39,7 +42,13 @@ app.use(express.static("public"));
 // Note: Feel free to replace the example routes below with your own
 const usersRoutes = require("./routes/users");
 const widgetsRoutes = require("./routes/widgets");
-// const itemRoutes = require("./routes/items");
+const itemRoutes = require("./routes/items");
+const loginRoutes = require("./routes/login");
+const postad = require("./routes/postad");
+const search = require("./routes/search");
+const conversations = require("./routes/conversations");
+const messages = require("./routes/messages");
+const favourites = require("./routes/favourites");
 
 // Mount all resource routes
 // Note: Feel free to replace the example routes below with your own
