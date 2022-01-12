@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <title>Home Page</title>
+    <title>Item Page</title>
 
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/main.css" type="text/css" />
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
     <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
     <script type="text/javascript" src="/scripts/app.js"></script>
+    <script src="https://kit.fontawesome.com/77de315972.js" crossorigin="anonymous"></script>
   </head>
+  <body>
+    <%- include('partials/_header') %>
+    <div class="item-page-body">
+    <div id="item-box">
+      <% const capitalize = (s) => {
+        if (typeof s !== 'string') return ''
+        return s.charAt(0).toUpperCase() + s.slice(1)
+      }   %>
+      <div id="title-and-date">
+        <h1 id="item-title" style="padding-top: 14px;"> <%= capitalize(item.name) %></h1>
+        <p style="font-size: 28px; color: black;"> $<%= (item.price)/100 %> </p>
+      </div>
+      <div id="price-and-description">
+        <p style="line-height: 0.1em; font-weight: bold;"> <%= capitalize(item.description) %></p>
+      </div>
 
-  <body id="item-body">
-    <div id="title-and-date">
-      <h1 id="item-title"> <%= item.name %></h1>
-      <p>Posted on: <%= item.date_posted %></p>
+      <div style="display: flex; justify-content: center;">
+        <img id="item-image" style="text-align: center;" src= <%= item.image_url %>
+      </div>
     </div>
-    <img id="item-image" src=<%=item.image_url %> >
-    <div id="price-and-description">
-      <p> $<%= (item.price)/100 %> </p>
-      <p> <%= item.description %> </p>
-      <p> id="favourite-button"> ❤️ </p>
-    </div>
-
+    <% console.log(user_id, item.seller_id) %>
+    <% if (parseInt(user_id, 10) === parseInt(item.seller_id, 10)) { %>
+      <div id="mark-as-sold">
+        <form action='sold/<%=item.id%>' method="POST">
+          <button id="mark-as-sold-btn">Mark as sold</button>
+        </form>
+      </div>
+    <% } else { %>
+      <div id="message-box" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+        <form method="POST" action="/conversations">
+          <button type="submit" id="message-seller">Message Seller</button>
+          <input type="hidden" name="item_id" value="<%= item.id %>">
+        </form>
+      </div>
+      <p style="display: flex; justify-content: center;">Posted: <%= item.date_posted.toString().slice(0,15) %></p>
+    <% } %>
+  </div>
   </body>
- </html>
-
-
+</html>
