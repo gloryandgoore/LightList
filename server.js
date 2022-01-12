@@ -54,6 +54,14 @@ const favourites = require("./routes/favourites");
 // Note: Feel free to replace the example routes below with your own
 app.use("/api/users", usersRoutes(db));
 app.use("/api/widgets", widgetsRoutes(db));
+app.use("/items", itemRoutes(db));
+app.use("/favourites", favourites(db));
+app.use("/", loginRoutes(db));
+app.use("/", postad(db));
+app.use("/", search(db));
+app.use("/", conversations(db));
+app.use("/", messages(db));
+
 // app.use("/", itemRoutes(db));
 // Note: mount other resources here, using the same pattern above
 
@@ -61,14 +69,19 @@ app.use("/api/widgets", widgetsRoutes(db));
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).
 const sqlQuery = "SELECT * FROM items;";
+const favsQuery = "SELECT * FROM favourites WHERE user_id = $1;"
 
 app.get("/", (req, res) => {
   db.query(sqlQuery)
   .then(data => {
     const templateVars = { items: data.rows }
-    console.log(templateVars);
-    res.render("index", templateVars);
-  })
+    db.query(favsQuery, [req.session.user_id])
+    .then(data => {
+      templateVars.favourites = data.rows;
+      console.log("favourites", templateVars.favourites);
+      res.render("index", templateVars);
+    });
+  });
 });
 
 app.listen(PORT, () => {
