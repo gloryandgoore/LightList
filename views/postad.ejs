@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Post Ad Page</title>
+
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script src="https://kit.fontawesome.com/77de315972.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <%- include('partials/_header') %>
+    <h1 style="padding-top: 130px; display: flex; justify-content: center;">Post an Ad</h1>
+    <div class="post-ad-page">
+    <div id="postad-form">
+      <form method="POST" action="/postad">
+        <label>Title:</label>
+        <input type="text" name="name" id="nav-input" style="width: 350px;"></input><p style="line-height: 0.1em;">&nbsp;</p>
+        <p style="line-height: 0.1em;">&nbsp;</p>
+        <label>&nbsp;Category:</label>
+        <select id = "categories-dropdown" placeholder="categories" name="categories" style="width: 305px;">
+          <option value="" disabled selected>Categories</option>
+          <option value = "1">Micro</option>
+          <option value = "2">Sedan</option>
+          <option value = "3">Coupe</option>
+          <option value = "4">Pickup</option>
+          <option value = "5">Sport Car</option>
+          <option value = "6">Crossover</option>
+          <option value = "7">SUV</option>
+          <option value = "8">Minivan</option>
+          <option value = "9">Muscle Car</option>
+          <option value = "10">Minibus</option>
+          <option value = "11">Campervan</option>
+          <option value = "12">Hatchback</option>
+        </select>
+        <p style="line-height: 0.1em;">&nbsp;</p>
+        <label>Price:</label>
+        <input type="number" name="price" id="nav-input" style="width: 350px"></input>
+        <p style="line-height: 0.1em;">&nbsp;</p>
+        <label>Description:</label>
+        <input type="text" name="description" id="nav-input" style="width: 290px;"></input>
+        <p style="line-height: 0.1em;">&nbsp;</p>
+        <label>Image URL:</label>
+        <input type="text" name="image" id="nav-input"></input>
+        <button type="submit" value="submit" id="post-ad-submit">Submit</button>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>
