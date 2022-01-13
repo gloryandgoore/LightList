@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router();
+const router  = express.Router();
 
 module.exports = (db) => {
   router.get("/conversations/:id", (req, res) => {
