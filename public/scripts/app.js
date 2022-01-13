@@ -1,4 +1,3 @@
-// Client facing scripts here
 $(() => {
   $.ajax({
     method: "GET",
@@ -8,10 +7,11 @@ $(() => {
       $("<div>").text(user.name).appendTo($("body"));
     }
   });;
-});
 
-$('.fa-heart').click((evt) => {
+
+  $('.fa-heart').click((evt) => {
     if ($(evt.target).data("id") === "far-fa-heart") {
+    // evt.stopPropagation();
     evt.preventDefault();
     $(evt.target).removeClass("far fa-heart").addClass("fas fa-heart").css("color", "red");
     $(evt.target).data('id', "fas-fa-heart");
@@ -20,6 +20,7 @@ $('.fa-heart').click((evt) => {
         console.log('done: ', data);
       })
     } else {
+      // evt.stopPropagation();
       evt.preventDefault();
       $(evt.target).removeClass("fas fa-heart").addClass("far fa-heart")
       $(evt.target).data('id', "far-fa-heart")
