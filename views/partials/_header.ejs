@@ -1,0 +1,57 @@
+<!--
+
+=========================================================
+* Argon Dashboard - v1.1.2
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<header>
+  <nav>
+  <container id=nav-bar>
+    <div id = "logo">
+      <a href="http://localhost:8080/">
+      <img src="https://www.freelogodesign.org/file/app/client/thumb/36739334-5af6-4db2-94a2-c4dd164e2801_200x200.png?1610402991648">
+      </a>
+    </div>
+    <div id="search-form">
+    <form method="GET" action="/search">
+      <input type="text" name="itemName" id="nav-input" placeholder="Search"></input>
+      <select id = "categories-dropdown" placeholder="categories" name="categories">
+        <option value="" disabled selected>Categories</option>
+        <option value = "1">Micro</option>
+        <option value = "2">Sedan</option>
+        <option value = "3">Coupe</option>
+        <option value = "4">Pickup</option>
+        <option value = "5">Sport Car</option>
+        <option value = "6">Crossover</option>
+        <option value = "7">SUV</option>
+        <option value = "8">Minivan</option>
+        <option value = "9">Muscle Car</option>
+        <option value = "10">Minibus</option>
+        <option value = "11">Campervan</option>
+        <option value = "12">Hatchback</option>
+      </select>
+      <input type="hidden" name="minPrice" value=0>
+      <input type="hidden" name="maxPrice" value=2500001>
+      <button type="search" value="Search" class="btn btn-outline-dark">Search</button>
+    </form>
+    </div>
+    <section class="nav-icons">
+      <a href="http://localhost:8080/conversations"><i class="fas fa-envelope"></i></a>
+        <div class="circle">
+            <p>2</p>
+        </div>
+      <a href="http://localhost:8080/favourites"><i class="fas fa-star"></i></a>
+      <a href="http://localhost:8080/postad" class="button" style="padding-right: 23px;"><button id="post-ad-nav">Post Ad</button></a>
+    </section>
+  </container>
+  </nav>
+</header>

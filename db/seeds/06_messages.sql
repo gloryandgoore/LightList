@@ -12,3 +12,5 @@ INSERT INTO messages (conversation_id, from_buyer, content) VALUES (1, False, 't
 -- INSERT INTO messages (conversation_id, from_buyer, content) VALUES (1, False, 'Great!, Can I see it tomorrow?');
 -- INSERT INTO messages (conversation_id, from_buyer, content) VALUES (1, True, 'How about Sunday')
 -- INSERT INTO messages (conversation_id, from_buyer, content) VALUES (1, False, 'Ok sounds good!');
+
+
