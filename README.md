@@ -2,7 +2,7 @@ LightList
 =========
 LightList is a full stack web application built with Node and Express that allows users to view and list cars for sale.
 
-##Contributors
+## Contributors
 
 - [Matija Bozic](https://github.com/Shinden88)
 
