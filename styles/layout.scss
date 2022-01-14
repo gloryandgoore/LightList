@@ -2,9 +2,32 @@
 
 body {
   background-color: #f1faee;
-
+  background-image: url("https://www.transparenttextures.com/patterns/connected.png");
   h1 {
     color: black;
+  }
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #a8dadc;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #1d3557;
+    display: block;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
   }
 }
 
@@ -17,15 +40,16 @@ body {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #457b9d;
+  background-color: #1d3557;
   height: 100px;
   position: fixed;
   top: 0;
   z-index: 1;
   font-family: 'Montserrat', sans-serif;
 }
-.fa-solid fa-shuttle-space {
-  color: #e63946;
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
 }
 
 #logo {
@@ -80,21 +104,21 @@ a.button {
 }
 
 
-.fa-envelope {
+.fa-envelope-square {
   font-size: 30px;
-  color: white;
+  color: #a8dadc;
   padding-right: 5px;
 }
-.fa-envelope:hover {
+.fa-envelope-square:hover {
   transform: translateY(-1px) scale(1.02);
 }
 
-.fa-star {
+.fa-thumbs-up {
   font-size: 30px;
-  color: #E6BF00;
+  color: #a8dadc;
   margin-right: 20px;
 }
-.fa-star:hover {
+.fa-thumbs-up:hover {
   transform: translateY(-1px) scale(1.02);
 }
 
@@ -131,19 +155,21 @@ a.button {
   font-weight: bold;
   font-size: 22px;
   font-family: 'Montserrat', sans-serif;
+  padding-left: 150px;
 }
 .item-grid, .favourites-item-grid{
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(3, minmax(320px, 320px));
+  grid-template-columns: repeat(2, minmax(420px, 420px));
   grid-auto-rows: 258px;
   padding: 68px 68px;
   padding-top: 20px;
+  padding-left: 200px;
   justify-content: center;
 }
 
 .favourites-item-grid {
-  padding-top: 140px;
+  padding-top: 50px;
 }
 
 .item {
@@ -240,7 +266,8 @@ a.button {
   padding-top: 5px;
   padding-bottom: 10px;
   border-radius: 10px;
-  background-color: white;
+  margin-left: 200px;
+  background-color: #9caebf;
   box-shadow: rgba(2, 8, 20, 0.6) 0px 1em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.195em 1em;
   width: 50em;
   color: black;
@@ -258,7 +285,7 @@ a.button {
     align-items: center;
     padding-left: 20px;
     padding: 20px 18px;
-    background-color: white;
+    background-color: #9caebf;
     color: black;
   }
   #title-and-date {
@@ -295,7 +322,7 @@ a.button {
   border: transparent;
   padding: 3px 10px;
   border-radius: 10px;
-  background-color: #f59e42;
+  background-color: #a8dadc;
   font-weight: bold;
   font-size: 20px;
   box-shadow: rgba(2, 8, 20, 0.4) 0px 1em 1.175em, rgba(2, 8, 20, 0.1) 0px 0.295em 1em;
@@ -318,7 +345,7 @@ a.button {
   border: transparent;
   padding: 14px 10px;
   border-radius: 10px;
-  background-color: #f59e42;
+  background-color: #a8dadc;
   box-shadow: rgba(2, 8, 20, 0.6) 0px 1em 1.175em, rgba(2, 8, 20, 0.1) 0px 0.295em 1em;
   font-weight: bold;
   font-size: 20px;
@@ -339,8 +366,8 @@ h1 {
   line-height: 2em;
   font-family: 'Montserrat', sans-serif;
   input, select {
-    background-color: #4a82de;
-    color: white;
+    background-color: white;
+    border: #4a82de 2px;
   }
 }
 
@@ -359,8 +386,8 @@ h1 {
 
 .post-ad-page {
   border: transparent;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 300px;
+  margin-right: 150px;
   border-radius: 18px;
   padding-top: 38px;
   padding-bottom: 38px;
@@ -371,7 +398,7 @@ h1 {
   justify-content: center;
   width: auto;
   background-color: #4a82de;
-  background-color: white;
+  background-color: #a8dadc;
   font-family: 'Montserrat', sans-serif;
   box-shadow: rgba(2, 8, 20, 0.6) 0px 1em 1.175em, rgba(2, 8, 20, 0.1) 0px 0.295em 1em;
 }
@@ -380,7 +407,7 @@ h1 {
 
 #conversations {
   border: transparent 1px;
-  background-color: white;
+  background-color: #a8dadc;
   border-radius: 20px;
   height: 450px;
   width: 450px;
@@ -401,7 +428,7 @@ h1 {
   justify-content: center;
   gap: 1em;
   p {
-    border: solid black;
+    border: solid #1d3557;
     padding: 7px;
     border-radius: 15px;
     box-shadow: rgba(2, 8, 20, 0.2) 0px 1em 1.175em, rgba(2, 8, 20, 0.1) 0px 0.295em 1em;
@@ -411,37 +438,38 @@ h1 {
 //Messages
 
 .messages-box {
-  border: solid black;
-  background-color: white;
+  border: solid #1d3557;
+  background-color: #f1faee;
+  width: 65%;
   display: flex;
   padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 15px;
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
-  margin-left: 45px;
+  margin-left: 300px;
   margin-right: 45px;
   p {
     border: transparent;
     padding: 12px 12px;
     border-radius: 25px;
-    box-shadow: rgba(2, 8, 20, 0.3) 0px 1em 1.175em, rgba(2, 8, 20, 0.1) 0px 0.295em 1em;
+    box-shadow: #1d3557(2, 8, 20, 0.3) 0px 1em 1.175em, #1d3557(2, 8, 20, 0.1) 0px 0.295em 1em;
   }
 }
 
 #message-buyer-seller {
   input {
-    border: solid black;
+    border: solid #1d3557;
     padding: 3px 10px;
     border-radius: 10px;
     padding-right: 220px;
     height: 50px;
-    box-shadow: rgba(2, 8, 20, 0.3) 0px 1em 1.175em, rgba(2, 8, 20, 0.1) 0px 0.295em 1em;
+    box-shadow: #1d3557(2, 8, 20, 0.3) 0px 1em 1.175em, #1d3557(2, 8, 20, 0.1) 0px 0.295em 1em;
   }
   button {
-    background-color: #4a82de;
+    background-color:#1d3557;
     color: white;
     border: transparent;
     padding: 3px 10px;
@@ -469,7 +497,7 @@ h1 {
   border: transparent;
   padding: 14px 10px;
   border-radius: 10px;
-  background-color: #f59e42;
+  background-color: #a8dadc;
   box-shadow: rgba(2, 8, 20, 0.6) 0px 1em 1.175em, rgba(2, 8, 20, 0.1) 0px 0.295em 1em;
   font-weight: bold;
   font-size: 20px;
