@@ -3,24 +3,24 @@ LightList
 LightList is a full stack web application built with Node and Express that allows users to view and list cars for sale.
 
 ##Contributors
-Matija Bozic
-![Matija Bozic](https://github.com/Shinden88)
-Caseyann Goore
-![Caseyann Goore](https://github.com/gloryandgoore)
-Talia Aziz khan
-![Talia Aziz Khan](https://github.com/TaliaAzizKhan)
+
+- ![Matija Bozic](https://github.com/Shinden88)
+
+- ![Caseyann Goore](https://github.com/gloryandgoore)
+
+- ![Talia Aziz Khan](https://github.com/TaliaAzizKhan)
 
 ## Final Product
 Homepage
-![Homepage]()
+![Homepage](https://github.com/gloryandgoore/LightList/blob/master/docs/LightList%20-%20Homepage.png)
 Post Ad
-![Post Ad]()
+![Post Ad](https://github.com/gloryandgoore/LightList/blob/master/docs/LightList%20-%20Post%20Ad.png)
 Messages
-![Messages]()
+![Messages](https://github.com/gloryandgoore/LightList/blob/master/docs/LightList%20-%20Messages.png)
 Item Page
-![Item Page]()
+![Item Page](https://github.com/gloryandgoore/LightList/blob/master/docs/LightList%20-%20Item%20page.png)
 Favourites
-![Favourites]()
+![Favourites](https://github.com/gloryandgoore/LightList/blob/master/docs/LightList%20-%20Favourites.png)
 
 ## Getting Started
 
