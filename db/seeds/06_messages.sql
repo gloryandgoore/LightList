@@ -1,4 +1,9 @@
 
+INSERT INTO messages (conversation_id, from_buyer, content) VALUES (2, False, 'Has there ever been a dent on the car?');
+INSERT INTO messages (conversation_id, from_buyer, content) VALUES (2, True, 'No, its clean.');
+INSERT INTO messages (conversation_id, from_buyer, content) VALUES (2, False, 'Great!, Can I see it tomorrow?');
+INSERT INTO messages (conversation_id, from_buyer, content) VALUES (2, True, 'How about Sunday');
+INSERT INTO messages (conversation_id, from_buyer, content) VALUES (2, False, 'Ok sounds good!');
 INSERT INTO messages (conversation_id, from_buyer, content) VALUES (1, True, 'Still available?');
 INSERT INTO messages (conversation_id, from_buyer, content) VALUES (1, False, 'Yes. Price is firm.');
 INSERT INTO messages (conversation_id, from_buyer, content) VALUES (1, True, 'I will take it.');

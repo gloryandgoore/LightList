@@ -8,6 +8,11 @@ INSERT INTO items (seller_id, price, name, description, category_id, image_url) 
 INSERT INTO items (seller_id, price, name, description, category_id, image_url) VALUES (3, 30000000, '2016 Honda Odyssey EX FWD', 'AUTO CLIMATE CONTROL/ POWER STEERING/ POWER WINDOWS/ POWER LOCKS', 8, 'https://static.cargurus.com/images/forsale/2022/01/04/15/05/2016_honda_odyssey-pic-1880940626850179167-1024x768.jpeg');
 INSERT INTO items (seller_id, price, name, description, category_id, image_url) VALUES (3, 3800000, '2003 FORD MUSTANG', 'Iconic muscle car!!', 9, 'http://www.autoexpert.ca/en-ca/VehicleImages/vid_7346392/2003-Ford-Mustang-2dr-Convertible-GT-V8.jpg?vid=7346392&size=420x315&iuid=f87b643d0ad21b99e443a086a9810316');
 INSERT INTO items (seller_id, price, name, description, category_id, image_url) VALUES (3, 200000, 'Minibus Ford ctv 2004', 'A great project', 10, 'https://i.ebayimg.com/images/g/3ckAAOSw9S5h3F5A/s-l640.webp');
+INSERT INTO items (seller_id, price, name, description, category_id, image_url) VALUES (3, 1000000, 'Batmobile', 'Slight dent from runnnig over the Joker', 1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQv_o4GDaG5gT-gmKVtLadfnBdvXomVWWKYA&usqp=CAU');
+INSERT INTO items (seller_id, price, name, description, category_id, image_url) VALUES (3, 10000000, 'Pink Sports Car', 'Very spacious and fuel efficient', 1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-iNGDF6ut7pj9JcN52s5y1DSAlslystTr7A&usqp=CAU');
+INSERT INTO items (seller_id, price, name, description, category_id, image_url) VALUES (1, 20000000, 'Brand New Car ', 'Runs great', 1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY2lDl89_MadyOv5foX1kNIGwn4oU5kOTDrA&usqp=CAU');
+INSERT INTO items (seller_id, price, name, description, category_id, image_url) VALUES (3, 230000, 'Happy Car', 'Smiley convertible', 1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7d2ow2LPgIqXZXY7Hxwpy0WjUiFSYBvkLzg&usqp=CAU');
+INSERT INTO items (seller_id, price, name, description, category_id, image_url) VALUES (3, 800000, 'Storm Trooper Whip', 'Used for conventions', 1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkV-m0dMyeZxAU7PuvHNYh4Ti8kq6KTPDZFQ&usqp=CAU');
 
 
 
