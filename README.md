@@ -4,11 +4,11 @@ LightList is a full stack web application built with Node and Express that allow
 
 ##Contributors
 
-- ![Matija Bozic](https://github.com/Shinden88)
+- [Matija Bozic](https://github.com/Shinden88)
 
-- ![Caseyann Goore](https://github.com/gloryandgoore)
+- [Caseyann Goore](https://github.com/gloryandgoore)
 
-- ![Talia Aziz Khan](https://github.com/TaliaAzizKhan)
+- [Talia Aziz Khan](https://github.com/TaliaAzizKhan)
 
 ## Final Product
 Homepage
