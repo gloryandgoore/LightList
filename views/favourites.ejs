@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home Page</title>
+    <title>Favourites</title>
 
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
@@ -13,6 +13,27 @@
   </head>
   <body>
     <%- include('partials/_header') %>
+     <!-- Side navigation -->
+<div class="sidenav">
+  <a href="#">Crossover</a>
+  <a href="#">Crossover</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Micro</a>
+  <a href="#">Sedan</a>
+  <a href="#">Coupe</a>
+  <a href="#">Pickup</a>
+  <a href="#">Sport car</a>
+  <a href="#">Crossover</a>
+  <a href="#">SUV</a>
+  <a href="#">Minivan</a>
+  <a href="#">Muscle car</a>
+  <a href="#">Minibus</a>
+  <a href="#">Campervan</a>
+  <a href="#">Hatchback</a>
+  <a href="http://localhost:8080/conversations">Contact</a>
+</div>
+    <h1 style="padding-top: 130px; display: flex; justify-content: center;">Favourite Cars</h1>
     <div class="favourites-item-grid">
     <% for (let item of items) { %>
       <% if (!item.is_sold) { %>
@@ -20,7 +41,7 @@
         if (typeof s !== 'string') return ''
         return s.charAt(0).toUpperCase() + s.slice(1)
       }   %>
-      <div class="item" style="background-image: url('<%= item.image_url %>')"><a href="http://localhost:8080/item/<%=item.id%>"><header><p><%= capitalize(item.name) %></p></header><footer><p><%= ("$" + item.price / 100) %></p></footer></a></div>
+      <div class="item" style="background-image: url('<%= item.image_url %>')"><a href="http://localhost:8080/item/<%=item.id%>"><header><p><%= ("$" + item.price / 100) %></p></header><footer><p><%= capitalize(item.name) %></p></footer></a></div>
     <% }} %>
     </div>
   </body>

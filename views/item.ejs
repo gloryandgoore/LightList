@@ -13,12 +13,33 @@
   </head>
   <body>
     <%- include('partials/_header') %>
+      <!-- Side navigation -->
+<div class="sidenav">
+  <a href="#">Crossover</a>
+  <a href="#">Crossover</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Micro</a>
+  <a href="#">Sedan</a>
+  <a href="#">Coupe</a>
+  <a href="#">Pickup</a>
+  <a href="#">Sport car</a>
+  <a href="#">Crossover</a>
+  <a href="#">SUV</a>
+  <a href="#">Minivan</a>
+  <a href="#">Muscle car</a>
+  <a href="#">Minibus</a>
+  <a href="#">Campervan</a>
+  <a href="#">Hatchback</a>
+  <a href="http://localhost:8080/conversations">Contact</a>
+</div>
     <div class="item-page-body">
     <div id="item-box">
       <% const capitalize = (s) => {
         if (typeof s !== 'string') return ''
         return s.charAt(0).toUpperCase() + s.slice(1)
       }   %>
+
       <div id="title-and-date">
         <h1 id="item-title" style="padding-top: 14px;"> <%= capitalize(item.name) %></h1>
         <p style="font-size: 28px; color: black;"> $<%= (item.price)/100 %> </p>
@@ -45,6 +66,7 @@
           <input type="hidden" name="item_id" value="<%= item.id %>">
         </form>
       </div>
+
       <p style="display: flex; justify-content: center;">Posted: <%= item.date_posted.toString().slice(0,15) %></p>
     <% } %>
   </div>
